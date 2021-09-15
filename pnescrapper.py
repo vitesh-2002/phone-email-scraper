@@ -6,7 +6,6 @@ phone = re.compile(r''' (((\(\d\d\d\))|(\d\d\d))  #area code in the phone number
 
 ''',re.VERBOSE)
 
-
 email = re.compile(r'''
 \w+                     
 @
@@ -28,12 +27,11 @@ numbers_emails = '\n'.join(allnumbers) + '\n' + '\n'.join(emailaddresses)
 print(numbers_emails)
 
 
-
-
 '''
-uncomment this section by removing the three quotes from above and below
 this is the code you'll want to use if you're planning on copying and pasting the information to be scrapped
 just copy all the text and it will be automatically stored by the pyperclip module
+'''
+
 #use pyperclip module so that whatever text you have copied will be sensed by python
 text=pyperclip.paste()
 #use findall command to search through the text and detect phone numbers and emails
@@ -49,4 +47,3 @@ for i in phonenumbers:
 numbers_emails = '\n'.join(allnumbers) + '\n' + '\n'.join(emailaddresses)
 print(numbers_emails)
 pyperclip.copy(numbers_emails)
-'''
