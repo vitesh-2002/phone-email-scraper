@@ -1,4 +1,4 @@
-# phone-email-scrapper
+# phone-email-scraper
 
 
 This progam essentially searches for, detects, and scraps any phone numbers(program the format of the number according to the country) and email addresses.
